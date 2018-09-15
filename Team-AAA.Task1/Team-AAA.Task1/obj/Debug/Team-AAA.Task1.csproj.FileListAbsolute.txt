@@ -1,0 +1,7 @@
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe.config
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojAssemblyReference.cache
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csproj.CoreCompileInputs.cache
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
+D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
