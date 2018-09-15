@@ -11,6 +11,7 @@ namespace Team_AAA.Task1
         static void Main(string[] args)
         {
             //hello githab
+            //Yuroslav pushu kod blyat
         }
     }
 }
