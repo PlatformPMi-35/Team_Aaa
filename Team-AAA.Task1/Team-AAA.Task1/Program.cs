@@ -12,6 +12,7 @@ namespace Team_AAA.Task1
         {
             //hello githab
             //Yuroslav pushu kod blyat
+            //wtf
         }
     }
 }
