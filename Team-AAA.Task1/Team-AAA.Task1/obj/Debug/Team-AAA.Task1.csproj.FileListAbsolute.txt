@@ -8,3 +8,6 @@ D:\git\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe.config
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
+C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
+C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
+C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojResolveAssemblyReference.cache
