@@ -14,6 +14,8 @@ namespace Team_AAA.Task1
             //We are tired of this already, go drink, write it tomorrow
             //Yarik go start
             //life
+            Console.WriteLine("Hello World");
+            Console.ReadKey();
         }
     }
 }
