@@ -9,17 +9,23 @@ namespace Team_AAA.Task1
 {
     class Program
     {
-        
+        /// <summary>  
+        ///  Interface IReadable for realization method Read() in class Currency.  
+        /// </summary>  
         public interface IReadable
         {
             void Read(List<Currency> ls);
         }
-        //
+        /// <summary>  
+        ///  Class Currency.
+        /// </summary>  
         public class Currency : IReadable
         {
             public string CurrencyName {get;set;}
             public double Amount {get;set;}
-            //
+            /// <summary>  
+            ///  Constructors of class Currency.
+            /// </summary> 
             public Currency()
             {
                 CurrencyName="None";
@@ -30,7 +36,9 @@ namespace Team_AAA.Task1
                 this.CurrencyName=CurrencyName;
                 this.Amount=Amount;
             }
-            //
+            /// <summary>  
+            ///  Method Read, for reading from file.
+            /// </summary> 
             public void Read(List<Currency> ls)
             {
                StreamReader Reader = new StreamReader("File.txt", System.Text.Encoding.Default);
@@ -62,26 +70,52 @@ namespace Team_AAA.Task1
                }
                Reader.Close();
             }
-            //
+            /// <summary>  
+            ///  Method ShowUAN, for showing UAN only from list.
+            /// </summary> 
             public void ShowUAN(List<Currency> ls)
             {
                 foreach(Currency cur in ls)
                 {
-                    cur.ToString();
+                    if (cur.CurrencyName == "UAN")
+                    {
+                        Console.WriteLine(cur.ToString());
+                    }
                 }
             }
-            //
+            /// <summary>  
+            ///  Method ShowALL, for showing all list elements.
+            /// </summary> 
+            public void ShowALL(List<Currency> ls)
+            {
+                foreach (Currency cur in ls)
+                {
+                   Console.WriteLine(cur.ToString());
+                }
+            }
+            /// <summary>  
+            /// Ovverided method ToString(), for methods ShowUAN and ShowALL.
+            /// </summary> 
             public override string ToString()
             {
-                return CurrencyName + Amount;
+                return "CurrencyName - " + this.CurrencyName + "\nAmount - " + this.Amount;
             }
         }
-        //
+        /// <summary>  
+        ///  Main method, for all actions.
+        /// </summary>  
         static void Main(string[] args)
         {
             Currency cur=new Currency();
             List<Currency> lcur=new List<Currency>();
+            Console.WriteLine("-==All list==-");
+            //
             cur.Read(lcur);
+            cur.ShowALL(lcur);
+            //
+            Console.WriteLine();
+            Console.WriteLine("-==Only UAN==-");
+            //
             cur.ShowUAN(lcur);
             Console.ReadKey();
         }
