@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Team_AAA.Task1
 {
     class Program
     {
+        
         public interface IReadable
         {
-            void Read();
+            void Read(List<Currency> ls);
         }
         //
         public class Currency : IReadable
@@ -29,10 +31,54 @@ namespace Team_AAA.Task1
                 this.Amount=Amount;
             }
             //
+            public void Read(List<Currency> ls)
+            {
+               StreamReader Reader = new StreamReader("File.txt", System.Text.Encoding.Default);
+               string sLine = "";
+               while (sLine != null)
+               {
+                   Currency tmp = new Currency();
+
+                   for (int i = 0; i < 2; i++)
+                   {
+                    
+                       sLine = Reader.ReadLine();
+        
+                       if (sLine == null)
+                       {
+                           return;
+                       }
+                    
+                       if (i == 0 && sLine != null)
+                       {
+                          tmp.CurrencyName = sLine;
+                       }
+                       else if (i == 1 && sLine != null)
+                       {
+                           tmp.Amount = double.Parse(sLine);
+                       }
+                   }
+                   ls.Add(tmp);
+               }
+               Reader.Close();
+            }
+            //
+            public void ShowList(List<Currency> ls)
+            {
+                foreach(Currency cur in ls)
+                {
+                    Console.WriteLine("CurrencyName - " + cur.CurrencyName);
+                    Console.WriteLine("Amount - " + cur.Amount);
+                }
+            }
         }
         //
         static void Main(string[] args)
         {
+            Currency cur=new Currency();
+            List<Currency> lcur=new List<Currency>();
+            cur.Read(lcur);
+            cur.ShowList(lcur);
             Console.ReadKey();
         }
     }
