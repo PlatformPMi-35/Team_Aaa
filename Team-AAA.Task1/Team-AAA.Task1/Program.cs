@@ -63,13 +63,17 @@ namespace Team_AAA.Task1
                Reader.Close();
             }
             //
-            public void ShowList(List<Currency> ls)
+            public void ShowUAN(List<Currency> ls)
             {
                 foreach(Currency cur in ls)
                 {
-                    Console.WriteLine("CurrencyName - " + cur.CurrencyName);
-                    Console.WriteLine("Amount - " + cur.Amount);
+                    cur.ToString();
                 }
+            }
+            //
+            public override string ToString()
+            {
+                return CurrencyName + Amount;
             }
         }
         //
@@ -78,7 +82,7 @@ namespace Team_AAA.Task1
             Currency cur=new Currency();
             List<Currency> lcur=new List<Currency>();
             cur.Read(lcur);
-            cur.ShowList(lcur);
+            cur.ShowUAN(lcur);
             Console.ReadKey();
         }
     }
