@@ -7,15 +7,32 @@ using System.Threading.Tasks;
 namespace Team_AAA.Task1
 {
     class Program
-    { 
+    {
+        public interface IReadable
+        {
+            void Read();
+        }
+        //
+        public class Currency : IReadable
+        {
+            public string CurrencyName {get;set;}
+            public double Amount {get;set;}
+            //
+            public Currency()
+            {
+                CurrencyName="None";
+                Amount=0.0;
+            }
+            public Currency(string CurrencyName,double Amount)
+            {
+                this.CurrencyName=CurrencyName;
+                this.Amount=Amount;
+            }
+            //
+        }
+        //
         static void Main(string[] args)
         {
-            Readable a = new Readable();
-            //hello githab
-            //We are tired of this already, go drink, write it tomorrow
-            //Yarik go start
-            //life
-            Console.WriteLine("Hello World");
             Console.ReadKey();
         }
     }
