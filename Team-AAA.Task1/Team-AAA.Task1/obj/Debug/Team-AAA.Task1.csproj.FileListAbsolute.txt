@@ -11,3 +11,17 @@ C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
 C:\Users\Home\Source\Repos\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojResolveAssemblyReference.cache
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe.config
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojAssemblyReference.cache
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csproj.CoreCompileInputs.cache
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
+E:\Новая папка (3)\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe.config
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojAssemblyReference.cache
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
+C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb

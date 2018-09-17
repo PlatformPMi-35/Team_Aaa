@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 
 namespace GitTest
 {
@@ -14,7 +11,7 @@ namespace GitTest
             [TestMethod]
             public void TestMethod1()
             {
-                Readable a = new Readable();
+               
             }
         }
     
