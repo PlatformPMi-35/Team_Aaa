@@ -33,6 +33,7 @@ namespace Team_AAA.Task1
             var t = Pair.Save("../../Result.txt", currencies);
             Console.WriteLine(t);
             Console.ReadKey();
+            //Testing
         }
     }
 }
