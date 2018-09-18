@@ -28,3 +28,6 @@ C:\Users\Administrator\1111\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Tea
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe.config
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
+D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
+D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
+D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojResolveAssemblyReference.cache
