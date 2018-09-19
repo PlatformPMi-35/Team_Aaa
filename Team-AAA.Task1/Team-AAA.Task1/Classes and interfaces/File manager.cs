@@ -10,7 +10,7 @@ namespace Team_AAA.Task1.Classes_and_interfaces
     /// <summary>
     /// Class to write in file
     /// </summary>
-    class FileManager
+    public class FileManager
     {
 
         /// <summary>

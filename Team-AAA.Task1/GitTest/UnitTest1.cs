@@ -73,6 +73,12 @@ namespace GitTest
             Currency curr = new Currency(CurrencyName.Dollar, 100);
             string temp = "CurrencyName - Dollar\nAmount - 100";
             Assert.AreEqual(curr.ToString(), temp);
+            curr = new Currency(CurrencyName.UAH, 100);
+            temp = "CurrencyName - UAH\nAmount - 100";
+            Assert.AreEqual(curr.ToString(), temp);
+            curr = new Currency(CurrencyName.Euro, 100);
+            temp = "CurrencyName - Euro\nAmount - 100";
+            Assert.AreEqual(curr.ToString(), temp);
         }
 
         //Do pair test
@@ -178,5 +184,6 @@ namespace GitTest
             double DollarsSum = Math.Round(Conversion.Calculate(sum, UAH_VALUE, DOLLAR_VALUE),2);
             Assert.AreEqual(DollarsSum, 355.49);
         }
+
     }
 }

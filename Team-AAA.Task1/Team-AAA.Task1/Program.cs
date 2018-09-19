@@ -6,7 +6,7 @@ using Team_AAA.Task1.Classes_and_interfaces;
 namespace Team_AAA.Task1
 {
     
-    class Program
+    public class Program
     {
         public const double DOLLAR_VALUE = 28.13;
         public const double EURO_VALUE = 32.71;
@@ -19,9 +19,11 @@ namespace Team_AAA.Task1
         /// </summary>  
         static void Main(string[] args)
         {
-            int sum = 10000;
-            double DollarsSum = Math.Round(Conversion.Calculate(sum, DOLLAR_VALUE, UAH_VALUE), 2);
-            Console.WriteLine(DollarsSum);
+            Dictionary<CurrencyName, double> ccc = new Dictionary<CurrencyName, double>();
+            ccc.Add(CurrencyName.UAH, 100);
+            //currencies = PairOfCurrency.DoPair(lcur);
+            FileManager.Save("../../Suka.txt", ccc);
+            //////////
             int choice;
             Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
             Dictionary<CurrencyName, double> resultOfConversion = new Dictionary<CurrencyName, double>();
