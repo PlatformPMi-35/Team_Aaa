@@ -61,6 +61,7 @@
 
                     if (i == 0 && sLine != null)
                     {
+                        //if(sLine!="грн")
                         tmp.CurrencyName = sLine;
                     }
                     else if (i == 1 && sLine != null)

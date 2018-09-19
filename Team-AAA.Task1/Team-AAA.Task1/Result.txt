@@ -1,3 +1,4 @@
-CurrencyName - грн Amount - 25100
+CurrencyName - горн Amount - 100
 CurrencyName - Є Amount - 200
+CurrencyName - грн Amount - 25000
 CurrencyName - EUR Amount - 400

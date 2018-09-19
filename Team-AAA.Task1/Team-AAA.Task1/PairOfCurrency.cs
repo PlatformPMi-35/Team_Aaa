@@ -54,5 +54,6 @@ namespace Team_AAA.Task1
             }
             return currencies;
         }
+
     }
 }
