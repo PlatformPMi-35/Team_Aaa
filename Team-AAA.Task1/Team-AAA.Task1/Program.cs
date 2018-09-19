@@ -19,6 +19,7 @@ namespace Team_AAA.Task1
         /// </summary>  
         static void Main(string[] args)
         {
+
             int choice;
             Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
             Dictionary<CurrencyName, double> resultOfConversion = new Dictionary<CurrencyName, double>();
