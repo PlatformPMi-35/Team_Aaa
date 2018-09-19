@@ -19,11 +19,6 @@ namespace Team_AAA.Task1
         /// </summary>  
         static void Main(string[] args)
         {
-            Dictionary<CurrencyName, double> ccc = new Dictionary<CurrencyName, double>();
-            ccc.Add(CurrencyName.UAH, 100);
-            //currencies = PairOfCurrency.DoPair(lcur);
-            FileManager.Save("../../Suka.txt", ccc);
-            //////////
             int choice;
             Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
             Dictionary<CurrencyName, double> resultOfConversion = new Dictionary<CurrencyName, double>();
