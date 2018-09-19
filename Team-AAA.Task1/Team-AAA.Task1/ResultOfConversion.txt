@@ -1,1 +1,1 @@
-CurrencyName - Euro Amount - 2055,33
+CurrencyName - Dollar Amount - 2389,98
