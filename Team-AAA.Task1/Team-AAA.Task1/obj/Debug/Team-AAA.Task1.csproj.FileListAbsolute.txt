@@ -30,4 +30,5 @@ D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.exe
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.pdb
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.exe
 D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\bin\Debug\Team-AAA.Task1.pdb
-D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojResolveAssemblyReference.cache
+D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csprojAssemblyReference.cache
+D:\tttt\Team_Aaa\Team-AAA.Task1\Team-AAA.Task1\obj\Debug\Team-AAA.Task1.csproj.CoreCompileInputs.cache

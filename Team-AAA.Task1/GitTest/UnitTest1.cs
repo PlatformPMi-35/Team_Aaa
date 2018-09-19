@@ -1,21 +1,20 @@
-﻿
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Team_AAA.Task1;
 using Team_AAA.Task1.Classes_and_interfaces;
 
 namespace GitTest
 {
-    
-        [TestClass]
-        public class UnitTest1
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void HryvnaTest()
         {
-            [TestMethod]
-            public void HryvnaTest()
-            {
             CurrencyName a;
             a = ConverterToCurrencyName.Convert("грн");
             Assert.AreEqual(a, CurrencyName.UAH);
-            }
+        }
         public void DollarTest()
         {
             CurrencyName a;
@@ -35,5 +34,4 @@ namespace GitTest
             Assert.AreEqual(a, CurrencyName.None);
         }
     }
-    
 }
