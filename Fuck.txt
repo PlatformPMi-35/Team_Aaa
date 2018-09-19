@@ -1,3 +1,0 @@
-CurrencyName - UAH Amount - 25100
-CurrencyName - Euro Amount - 600
-CurrencyName - Dollar Amount - 800
