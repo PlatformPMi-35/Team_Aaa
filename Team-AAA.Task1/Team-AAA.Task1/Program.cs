@@ -19,7 +19,9 @@ namespace Team_AAA.Task1
         /// </summary>  
         static void Main(string[] args)
         {
-
+            int sum = 10000;
+            double DollarsSum = Math.Round(Conversion.Calculate(sum, DOLLAR_VALUE, UAH_VALUE), 2);
+            Console.WriteLine(DollarsSum);
             int choice;
             Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
             Dictionary<CurrencyName, double> resultOfConversion = new Dictionary<CurrencyName, double>();

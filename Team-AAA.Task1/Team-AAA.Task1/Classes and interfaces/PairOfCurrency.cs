@@ -8,7 +8,7 @@ namespace Team_AAA.Task1
     /// <summary>
     /// Class to make dictionary of currencies
     /// </summary>
-    class PairOfCurrency
+    public class PairOfCurrency
     {
         
         /// <summary>

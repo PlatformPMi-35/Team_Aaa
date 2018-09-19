@@ -16,19 +16,20 @@ namespace Team_AAA.Task1.Classes_and_interfaces
             {
                 ExchangeValue += Calculate(List[CurrencyName.Dollar], Program.DOLLAR_VALUE, Program.EURO_VALUE);
                 ExchangeValue += Calculate(List[CurrencyName.UAH], Program.UAH_VALUE, Program.EURO_VALUE);
-
+                ExchangeValue += (List[CurrencyName.Euro]);
                 
             }
             else if (CurrencyName.Dollar == Name)
             {
                 ExchangeValue += Calculate(List[CurrencyName.Euro], Program.EURO_VALUE, Program.DOLLAR_VALUE);
                 ExchangeValue += Calculate(List[CurrencyName.UAH], Program.UAH_VALUE, Program.DOLLAR_VALUE);
-               
+                ExchangeValue += (List[CurrencyName.Dollar]);
             }
             else if (CurrencyName.UAH == Name)
             {
                 ExchangeValue += Calculate(List[CurrencyName.Dollar], Program.DOLLAR_VALUE, Program.UAH_VALUE);
                 ExchangeValue += Calculate(List[CurrencyName.Euro], Program.EURO_VALUE, Program.UAH_VALUE);
+                ExchangeValue += (List[CurrencyName.UAH]);
             }
             else throw new ArgumentNullException("None type of currency name!");
 
@@ -37,7 +38,7 @@ namespace Team_AAA.Task1.Classes_and_interfaces
             return Result;
         }
 
-        static double  Calculate(double amount,double firstCurrencyCourse,double secondCurrencyCourse)
+        public static double  Calculate(double amount,double firstCurrencyCourse,double secondCurrencyCourse)
         {
             return amount * firstCurrencyCourse / secondCurrencyCourse;
         }

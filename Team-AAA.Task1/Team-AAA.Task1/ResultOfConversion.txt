@@ -1,1 +1,1 @@
-CurrencyName - UAH Amount - 42130
+CurrencyName - Dollar Amount - 2389,98

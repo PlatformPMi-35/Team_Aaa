@@ -9,7 +9,12 @@ namespace GitTest
     [TestClass]
     public class UnitTest1
     {
-        //Currency name convertion tests
+        public const double DOLLAR_VALUE = 28.13;
+        public const double EURO_VALUE = 32.71;
+        public const double UAH_VALUE = 1;
+
+
+        //Next 4 - currency name convertion tests
         [TestMethod]
         public void HryvnaTest()
         {
@@ -70,11 +75,108 @@ namespace GitTest
             Assert.AreEqual(curr.ToString(), temp);
         }
 
-        //Convertion to test
+        //Do pair test
         [TestMethod]
-        public void ConvertionToTest()
+        public void DoPairTest()
         {
+            Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
+            List<Currency> CurrList = new List<Currency>();
+            CurrList.Add(new Currency(CurrencyName.UAH, 500));
+            CurrList.Add(new Currency(CurrencyName.UAH, 100));
+            CurrList.Add(new Currency(CurrencyName.Dollar, 100));
+            CurrList.Add(new Currency(CurrencyName.Euro, 200));
+            CurrList.Add(new Currency(CurrencyName.Euro, 100));
+            currencies = PairOfCurrency.DoPair(CurrList);
+            foreach (var i in currencies)
+            {
+                if (i.Key == CurrencyName.UAH)
+                {
+                    Assert.AreEqual(i.Value, 600);
+                }
+                if (i.Key == CurrencyName.Dollar)
+                {
+                    Assert.AreEqual(i.Value, 100);
+                }
+                if (i.Key == CurrencyName.Euro)
+                {
+                    Assert.AreEqual(i.Value, 300);
+                }
+            }
+        }
 
+
+        //Next 3 - ConvertionTo test
+        [TestMethod]
+        public void ConvertToDollarTest()
+        {
+            Dictionary<CurrencyName, double> result = new Dictionary<CurrencyName, double>();
+            Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
+            List<Currency> list = new List<Currency>();
+            list.Add(new Currency(CurrencyName.Euro, 100));
+            list.Add(new Currency(CurrencyName.Euro, 200));
+            list.Add(new Currency(CurrencyName.Dollar, 100));
+            list.Add(new Currency(CurrencyName.UAH, 1000));
+            list.Add(new Currency(CurrencyName.UAH, 100));
+            list.Add(new Currency(CurrencyName.Dollar, 200));
+            currencies = PairOfCurrency.DoPair(list);
+            result = Conversion.To(currencies, CurrencyName.Dollar);
+            foreach (var i in result)
+            {
+                Assert.AreEqual(i.Key, CurrencyName.Dollar);
+                Assert.AreEqual(Math.Round(i.Value,2), 687.95);
+            }
+        }
+
+        
+        [TestMethod]
+        public void ConvertToEuroTest()
+        {
+            Dictionary<CurrencyName, double> result = new Dictionary<CurrencyName, double>();
+            Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
+            List<Currency> list = new List<Currency>();
+            list.Add(new Currency(CurrencyName.Euro, 100));
+            list.Add(new Currency(CurrencyName.Euro, 200));
+            list.Add(new Currency(CurrencyName.Dollar, 100));
+            list.Add(new Currency(CurrencyName.UAH, 1000));
+            list.Add(new Currency(CurrencyName.UAH, 100));
+            list.Add(new Currency(CurrencyName.Dollar, 200));
+            currencies = PairOfCurrency.DoPair(list);
+            result = Conversion.To(currencies, CurrencyName.Euro);
+            foreach (var i in result)
+            {
+                Assert.AreEqual(i.Key, CurrencyName.Euro);
+                Assert.AreEqual(Math.Round(i.Value, 2), 591.62);
+            }
+        }
+
+     
+        [TestMethod]
+        public void ConvertToHryvniaTest()
+        {
+            Dictionary<CurrencyName, double> result = new Dictionary<CurrencyName, double>();
+            Dictionary<CurrencyName, double> currencies = new Dictionary<CurrencyName, double>();
+            List<Currency> list = new List<Currency>();
+            list.Add(new Currency(CurrencyName.Euro, 100));
+            list.Add(new Currency(CurrencyName.Euro, 200));
+            list.Add(new Currency(CurrencyName.Dollar, 100));
+            list.Add(new Currency(CurrencyName.UAH, 1000));
+            list.Add(new Currency(CurrencyName.UAH, 100));
+            list.Add(new Currency(CurrencyName.Dollar, 200));
+            currencies = PairOfCurrency.DoPair(list);
+            result = Conversion.To(currencies, CurrencyName.UAH);
+            foreach (var i in result)
+            {
+                Assert.AreEqual(i.Key, CurrencyName.UAH);
+                Assert.AreEqual(Math.Round(i.Value, 2), 19352);
+            }
+        }
+
+        [TestMethod]
+        public void CalculateTest()
+        {
+            int sum = 10000;
+            double DollarsSum = Math.Round(Conversion.Calculate(sum, UAH_VALUE, DOLLAR_VALUE),2);
+            Assert.AreEqual(DollarsSum, 355.49);
         }
     }
 }
