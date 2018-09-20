@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-
-
-namespace Team_AAA.Task1
+﻿namespace Team_AAA.Task1
 {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+
     /// <summary>
     /// Class to make dictionary of currencies
     /// </summary>

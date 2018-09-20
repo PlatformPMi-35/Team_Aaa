@@ -4,20 +4,20 @@
     using System.Collections.Generic;
     using System.IO;
     using Team_AAA.Task1.Classes_and_interfaces;
+
     /// <summary>  
     ///  Class Currency.
     /// </summary>  
     public class Currency : IReadable
     {
 
-
         /// <summary>  
         ///  Method Read, for reading from file.
         /// </summary> 
-        public  void Read(List<Currency> ls)
+        public void Read(List<Currency> ls)
         {
             StreamReader Reader = new StreamReader("File.txt", System.Text.Encoding.Default);
-            string sLine = "";
+            string sLine = string.Empty;
             while (!Reader.EndOfStream)
             {
                 Currency tmp = new Currency();

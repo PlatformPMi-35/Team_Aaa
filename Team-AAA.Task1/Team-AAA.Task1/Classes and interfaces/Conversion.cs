@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Team_AAA.Task1.Classes_and_interfaces
+﻿namespace Team_AAA.Task1.Classes_and_interfaces
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public class Conversion
     {
-        public static Dictionary<CurrencyName, double> To(Dictionary<CurrencyName, double> List,CurrencyName Name)
+        public static Dictionary<CurrencyName, double> To(Dictionary<CurrencyName, double> List, CurrencyName Name)
         {
             Dictionary<CurrencyName, double> Result = new Dictionary<CurrencyName, double>();
-            double ExchangeValue=0;
+            double ExchangeValue = 0;
             if (CurrencyName.Euro == Name)
             {
                 ExchangeValue += Calculate(List[CurrencyName.Dollar], Program.DOLLAR_VALUE, Program.EURO_VALUE);
@@ -38,7 +38,7 @@ namespace Team_AAA.Task1.Classes_and_interfaces
             return Result;
         }
 
-        public static double  Calculate(double amount,double firstCurrencyCourse,double secondCurrencyCourse)
+        public static double  Calculate(double amount, double firstCurrencyCourse, double secondCurrencyCourse)
         {
             return amount * firstCurrencyCourse / secondCurrencyCourse;
         }

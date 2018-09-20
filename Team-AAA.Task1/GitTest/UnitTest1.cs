@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Team_AAA.Task1;
-using Team_AAA.Task1.Classes_and_interfaces;
-
-namespace GitTest
+﻿namespace GitTest
 {
+    using System;
+    using System.Collections.Generic;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Team_AAA.Task1;
+    using Team_AAA.Task1.Classes_and_interfaces;
+
     [TestClass]
+
+    /// <summary>  
+    ///  Test class.
+    /// </summary>
     public class UnitTest1
     {
         public const double DOLLAR_VALUE = 28.13;
         public const double EURO_VALUE = 32.71;
         public const double UAH_VALUE = 1;
 
-
-        //Next 4 - currency name convertion tests
+        ////Next 4 - currency name convertion tests
         [TestMethod]
         public void HryvnaTest()
         {
@@ -181,7 +184,7 @@ namespace GitTest
         public void CalculateTest()
         {
             int sum = 10000;
-            double DollarsSum = Math.Round(Conversion.Calculate(sum, UAH_VALUE, DOLLAR_VALUE),2);
+            double DollarsSum = Math.Round(Conversion.Calculate(sum, UAH_VALUE, DOLLAR_VALUE), 2);
             Assert.AreEqual(DollarsSum, 355.49);
         }
 
