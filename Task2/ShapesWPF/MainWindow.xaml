@@ -8,17 +8,21 @@
         Title="MainWindow" Height="450" Width="800">
 
     <StackPanel>
-        <Canvas Height="600" Width="800" x:Name="bCanvas">
-            <Polygon Name="fuck" Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="10"
-        Points="15,200 68,70 110,200 0,125 135,125" >
-            </Polygon>
+        <Canvas Height="600" Width="800" x:Name="bCanvas" Margin="0,0,-8,0">
+            <Polygon x:Name="fuck" Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="10"
+        Points="15,200 68,70 110,200 0,125 135,125" />
             <Polygon Stroke="Blue" StrokeThickness="1" Fill="Yellow" Canvas.Left="10" Canvas.Top="175"
                FillRule="Nonzero"
-         Points="15,200 68,70 110,200 0,125 135,125" >
-            </Polygon>
+         Points="15,200 68,70 110,200 0,125 135,125" />
             <Button x:Name="button" Content="Button" Canvas.Left="507" Canvas.Top="188" Width="75" Click="button_Click"/>
             <Button x:Name="New_form" Content="New form" Canvas.Left="507" Canvas.Top="235" Width="75" Click="New_form_Click"/>
-            <Button x:Name="button1" Content="Button" Canvas.Top="10" Width="790" Height="410" Opacity="0" Click="button1_Click"/>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File" Width="40">
+                    <MenuItem Header="_Open" Click="MenuItem_Click"/>
+                    <MenuItem Header="_Save" Click="MenuItem_Click_1"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel/>
         </Canvas>
 
 

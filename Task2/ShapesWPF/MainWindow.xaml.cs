@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 
 namespace ShapesWPF
 {
@@ -20,6 +22,8 @@ namespace ShapesWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        Polygon newPolygon;
+        PointCollection pointCollection;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,23 +31,23 @@ namespace ShapesWPF
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            PointCollection cl = new PointCollection();
-            cl.Add(new Point(15, 200));
-            cl.Add(new Point(68, 70));
-            cl.Add(new Point(110, 200));
-            cl.Add(new Point(0, 125));
-            cl.Add(new Point(155, 150));
-            Polygon a = new Polygon
+            pointCollection = new PointCollection();
+            pointCollection.Add(new Point(15, 200));
+            pointCollection.Add(new Point(68, 70));
+            pointCollection.Add(new Point(110, 200));
+            pointCollection.Add(new Point(0, 125));
+            pointCollection.Add(new Point(155, 150));
+            newPolygon = new Polygon
             {
-                Name = ":)",
+                Name = "",
                 Stroke = Brushes.Black,
                 StrokeThickness = 1,
                 Fill = Brushes.Yellow,
-                Points = cl
+                Points = pointCollection
             };
-            bCanvas.Children.Add(a);
-            Canvas.SetLeft(a, 200);
-            Canvas.SetTop(a, 100);
+            bCanvas.Children.Add(newPolygon);
+            Canvas.SetLeft(newPolygon, 200);
+            Canvas.SetTop(newPolygon, 100);
             fuck.Fill = Brushes.Pink;
         }
 
@@ -65,6 +69,28 @@ namespace ShapesWPF
                 Dialog a = new Dialog(bCanvas);
                 a.Owner = this;
                 a.Show();
+            }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (pointCollection == null)
+            {
+                MessageBox.Show("Point collection is empty", "", MessageBoxButton.OK);
+            }
+            else
+            {
+                XmlSerializer formatter = new XmlSerializer(typeof(PointCollection));
+                using (FileStream fs = new FileStream("../../Polygon.xml", FileMode.OpenOrCreate))
+                {
+                    formatter.Serialize(fs, pointCollection);
+                }
+                MessageBox.Show("Was written in xml file \"Polygon.xml\"", "", MessageBoxButton.OK);
             }
         }
     }

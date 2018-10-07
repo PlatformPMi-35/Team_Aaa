@@ -21,7 +21,7 @@ namespace ShapesWPF
     {
         int count = 0;
         Canvas c;
-        public Dialog()
+        public Dialog(string v)
         {
             InitializeComponent();
         }
