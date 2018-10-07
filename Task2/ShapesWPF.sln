@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesWPF", "ShapesWPF\ShapesWPF.csproj", "{58F00809-89A4-4072-9543-5744911A1D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58F00809-89A4-4072-9543-5744911A1D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F00809-89A4-4072-9543-5744911A1D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F00809-89A4-4072-9543-5744911A1D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F00809-89A4-4072-9543-5744911A1D36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21EEB434-C777-42A4-A1C9-B89FC71A7DBA}
+	EndGlobalSection
+EndGlobal
