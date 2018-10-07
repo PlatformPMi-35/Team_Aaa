@@ -19,6 +19,7 @@ namespace ShapesWPF
     /// </summary>
     public partial class Dialog : Window
     {
+        int count = 0;
         Canvas c;
         public Dialog()
         {
@@ -31,23 +32,25 @@ namespace ShapesWPF
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            count++;
+            string name = "Polygon" + count.ToString();
             PointCollection cl = new PointCollection();
-            cl.Add(new Point(15, 200));
-            cl.Add(new Point(68, 70));
-            cl.Add(new Point(110, 200));
-            cl.Add(new Point(0, 125));
-            cl.Add(new Point(155, 160));
+            cl.Add(new Point(15/*int.Parse(textBox2.Text)*/, 200/*int.Parse(textBox3.Text)*/));
+            cl.Add(new Point(68/*int.Parse(textBox4.Text)*/, 70/*int.Parse(textBox5.Text)*/));
+            cl.Add(new Point(110/*int.Parse(textBox6.Text)*/, 200/*int.Parse(textBox7.Text)*/));
+            cl.Add(new Point(0/*int.Parse(textBox8.Text)*/, 125/*int.Parse(textBox9.Text)*/));
+            cl.Add(new Point(135/*int.Parse(textBox10.Text)*/, 125/*int.Parse(textBox11.Text)*/));
             Polygon a = new Polygon
             {
-                Name = "fuck",
+                Name = name,
                 Stroke = Brushes.Black,
                 StrokeThickness = 1,
                 Fill = Brushes.Yellow,
                 Points = cl
             };
-            c.Children.Add(a);
-            Canvas.SetLeft(a, int.Parse(textBox.Text));
-            Canvas.SetTop(a, int.Parse(textBox1.Text));
+            
+            ColorDialog b = new ColorDialog(c,a,int.Parse(textBox.Text), int.Parse(textBox1.Text));
+            b.Show();
             this.Close();
         }
     }

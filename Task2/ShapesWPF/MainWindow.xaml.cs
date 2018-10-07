@@ -35,7 +35,7 @@ namespace ShapesWPF
             cl.Add(new Point(155, 150));
             Polygon a = new Polygon
             {
-                Name = "fuck",
+                Name = ":)",
                 Stroke = Brushes.Black,
                 StrokeThickness = 1,
                 Fill = Brushes.Yellow,
@@ -47,11 +47,25 @@ namespace ShapesWPF
             fuck.Fill = Brushes.Pink;
         }
 
+        int count = 0;
+
         private void New_form_Click(object sender, RoutedEventArgs e)
         {
             Dialog a = new Dialog(bCanvas);
             a.Owner = this;
             a.Show();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            count++;
+            if (count > 2)
+            {
+                count = 0;
+                Dialog a = new Dialog(bCanvas);
+                a.Owner = this;
+                a.Show();
+            }
         }
     }
 }
