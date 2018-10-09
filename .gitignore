@@ -1,6 +1,5 @@
 ﻿################################################################################
-# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Team-AAA.Task1/.vs/Team-AAA.Task1/v15/Server/sqlite3/db.lock
-/Task1/.vs/Task1/v15/Server/sqlite3/db.lock
+/Task2/.vs/ShapesWPF/v15/Server/sqlite3/db.lock
