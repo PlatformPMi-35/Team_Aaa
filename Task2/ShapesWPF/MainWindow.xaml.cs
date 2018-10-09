@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Drawing;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -27,10 +28,32 @@ namespace ShapesWPF
         public MainWindow()
         {
             InitializeComponent();
-        }
 
+            DrawCanvas.MouseDown += OnImageCliced;
+        }
+        Polygon pol = new Polygon();
+        PointCollection polcol = new PointCollection();
+        int i = 0;
+        void OnImageCliced(object sender, MouseEventArgs args)
+        {
+            
+            Point p = args.GetPosition(this);
+            polcol.Add(p);
+            i++;
+            if (i == 5)
+            {
+                DrawCanvas.Children.Add(pol);
+                Canvas.SetLeft(pol, 20);
+                Canvas.SetTop(pol, 10);
+                pol.Fill = Brushes.Green;
+                i = 0;
+            }
+            // у вас есть координаты клика относительно формы
+        }
+        // System.Drawing.Pic
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            
             pointCollection = new PointCollection();
             pointCollection.Add(new Point(15, 200));
             pointCollection.Add(new Point(68, 70));
@@ -50,7 +73,7 @@ namespace ShapesWPF
             Canvas.SetTop(newPolygon, 100);
             fuck.Fill = Brushes.Pink;
         }
-
+        
         int count = 0;
 
         private void New_form_Click(object sender, RoutedEventArgs e)
@@ -58,6 +81,7 @@ namespace ShapesWPF
             Dialog a = new Dialog(bCanvas);
             a.Owner = this;
             a.Show();
+            
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
@@ -91,6 +115,27 @@ namespace ShapesWPF
                     formatter.Serialize(fs, pointCollection);
                 }
                 MessageBox.Show("Was written in xml file \"Polygon.xml\"", "", MessageBoxButton.OK);
+            }
+        }
+
+        private void DrawCanvas_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+            Point p = e.GetPosition(this);
+            polcol.Add(p);
+            i++;
+            if (i == 5)
+            {
+                pol = new Polygon
+                { };
+                    
+                                                                                        
+
+                DrawCanvas.Children.Add(pol);
+                Canvas.SetLeft(pol, 20);
+                Canvas.SetTop(pol, 10);
+                pol.Fill = Brushes.Green;
+                i = 0;
             }
         }
     }

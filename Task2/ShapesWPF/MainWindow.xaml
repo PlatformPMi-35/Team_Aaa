@@ -23,6 +23,7 @@
                 </MenuItem>
             </Menu>
             <StackPanel/>
+            <Canvas x:Name="DrawCanvas" Height="142" Canvas.Left="387" Canvas.Top="30" Width="343" MouseDown="DrawCanvas_MouseDown"/>
         </Canvas>
 
 
