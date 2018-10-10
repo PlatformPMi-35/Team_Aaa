@@ -22,7 +22,7 @@
                 </MenuItem>
             </Menu>
             <Menu Width="41" Height="18" Canvas.Left="35" >
-                <MenuItem Header="_Save" Width="41" Height="18"/>
+                <MenuItem Header="_Save" Width="41" Height="18" Click="MenuItem_Click_2"/>
             </Menu>
         </Canvas>
         <Canvas x:Name="DrawCanvs" Height="400" Width="792" MouseLeftButtonDown="DrawCanvas_MouseLeftButtonDown" Opacity="10" Background="White" Margin="1,0,0.6,0" RenderTransformOrigin="0.5,0.5">

@@ -38,21 +38,49 @@ namespace ShapesWPF
             Menu_it.Items.Clear();
         }
 
+        public void ExportToPng(Canvas surface)
+        {
+
+            // Save current canvas transform
+            Transform transform = surface.LayoutTransform;
+            // reset current transform (in case it is scaled or rotated)
+            surface.LayoutTransform = null;
+
+            // Get the size of canvas
+            Size size = new Size(surface.Width, surface.Height);
+            // Measure and arrange the surface
+            // VERY IMPORTANT
+            surface.Measure(size);
+            surface.Arrange(new Rect(size));
+
+            // Create a render bitmap and push the surface to it
+            RenderTargetBitmap renderBitmap =
+              new RenderTargetBitmap(
+                (int)size.Width,
+                (int)size.Height,
+                96d,
+                96d,
+                PixelFormats.Pbgra32);
+            renderBitmap.Render(surface);
+
+            // Create a file stream for saving image
+            using (FileStream outStream = new FileStream("../../Res.jpeg", FileMode.Create))
+            {
+                // Use png encoder for our data
+                PngBitmapEncoder encoder = new PngBitmapEncoder();
+                // push the rendered bitmap to it
+                encoder.Frames.Add(BitmapFrame.Create(renderBitmap));
+                // save the data to the stream
+                encoder.Save(outStream);
+            }
+
+            // Restore previously saved layout
+            surface.LayoutTransform = transform;
+        }
+
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            if (pointCollection == null)
-            {
-                MessageBox.Show("Point collection is empty", "", MessageBoxButton.OK);
-            }
-            else
-            {
-                XmlSerializer formatter = new XmlSerializer(typeof(PointCollection));
-                using (FileStream fs = new FileStream("../../Polygon.xml", FileMode.OpenOrCreate))
-                {
-                    formatter.Serialize(fs, pointCollection);
-                }
-                MessageBox.Show("Was written in xml file \"Polygon.xml\"", "", MessageBoxButton.OK);
-            }
+            ExportToPng(DrawCanvs);
         }
 
         public void MainMenuAdd(string NameOfFigure)
@@ -62,7 +90,7 @@ namespace ShapesWPF
             this.Menu_it.Items.Add(menuShape);
         }
         PointCollection polcol= new PointCollection();
-        int i = 0;
+        int i = 0; int z = 1;
         private void DrawCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             //pointCollection = new PointCollection();
@@ -90,9 +118,27 @@ namespace ShapesWPF
                 a.Owner = this;
                 a.Show();
                 DrawCanvs.Children.Add(newP);
-                MainMenuAdd("_Pentagram");
+                MainMenuAdd("_Pentagram "+z);
                 polcol = new PointCollection();
                 i = 0;
+                z++;
+            }
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            if (pointCollection == null)
+            {
+                MessageBox.Show("Point collection is empty", "", MessageBoxButton.OK);
+            }
+            else
+            {
+                XmlSerializer formatter = new XmlSerializer(typeof(PointCollection));
+                using (FileStream fs = new FileStream("../../Polygon.xml", FileMode.OpenOrCreate))
+                {
+                    formatter.Serialize(fs, pointCollection);
+                }
+                MessageBox.Show("Was written in xml file \"Polygon.xml\"", "", MessageBoxButton.OK);
             }
         }
 
