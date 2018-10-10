@@ -8,39 +8,28 @@
         Title="MainWindow" Height="450" Width="800">
 
     <StackPanel>
-        <Canvas 
-            Height="600"
-            Width="800"
-            x:Name="bCanvas"
-            Margin="0,0,-8,0">
-            <Polygon x:Name="fuck"
-                     Stroke="Blue"
-                     StrokeThickness="1"
-                     Fill="Yellow"
-                     Canvas.Left="10"
-                     Points="15,200 68,70 110,200 0,125 135,125" />
-            <Polygon 
-                Stroke="Blue"
-                StrokeThickness="1"
-                Fill="Yellow"
-                Canvas.Left="10"
-                Canvas.Top="175"
-                FillRule="Nonzero"
-                Points="15,200 68,70 110,200 0,125 135,125" />
-            <Canvas  Margin="0,0,-8,0" Height="600" Width="800" x:Name="newCanvas"></Canvas>
-            <Button x:Name="button" Content="Button" Canvas.Left="507" Canvas.Top="188" Width="75" Click="button_Click"/>
-            <Button x:Name="New_form" Content="New form" Canvas.Left="507" Canvas.Top="235" Width="75" Click="New_form_Click"/>
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File" Width="40">
+        <Canvas Height="20" >
+            <Menu Width="54" Height="18" Canvas.Left="81">
+                <MenuItem Header="_Shapes" Width="54" Height="18"/>
+            </Menu>
+            <Menu Margin="0,0,755,0">
+                <MenuItem Header="_File" Width="30" Height="18">
                     <MenuItem Header="_New" Click="MenuItem_Click"/>
                     <MenuItem Header="_Open" Click="MenuItem_Click"/>
                     <MenuItem Header="_Save" Click="MenuItem_Click_1"/>
                 </MenuItem>
             </Menu>
-            <StackPanel/>
-            <Canvas x:Name="DrawCanvas" Height="142" Canvas.Left="387" Canvas.Top="30" Width="343" MouseDown="DrawCanvas_MouseDown"/>
+            <Button x:Name="button" Content="Button" Width="76" Click="button_Click" Canvas.Left="358" Canvas.Top="-2"/>
+            <Button x:Name="New_form" Content="New form" Canvas.Left="262" Canvas.Top="-2" Width="75" Click="New_form_Click"/>
+            <Menu Width="41" Height="18" Canvas.Left="35" >
+                <MenuItem Header="_Save" Width="41" Height="18"/>
+            </Menu>
         </Canvas>
-
-
+        <Canvas
+            Height="400"
+            x:Name="bCanvas" HorizontalAlignment="Right"
+            Width="792">
+            <Canvas x:Name="DrawCanvas" Height="142" Canvas.Left="76" Canvas.Top="96" Width="342" MouseDown="DrawCanvas_MouseDown"/>
+        </Canvas>
     </StackPanel>
 </Window>

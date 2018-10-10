@@ -71,7 +71,6 @@ namespace ShapesWPF
             bCanvas.Children.Add(newPolygon);
             Canvas.SetLeft(newPolygon, 200);
             Canvas.SetTop(newPolygon, 100);
-            fuck.Fill = Brushes.Pink;
         }
         
         int count = 0;
@@ -98,9 +97,10 @@ namespace ShapesWPF
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            NewCanvas ab = new NewCanvas(newCanvas);
-            ab.Owner = this;
-            ab.Show();
+            //NewCanvas ab = new NewCanvas(newCanvas);
+            bCanvas.Children.Clear();
+            //ab.Owner = this;
+            //ab.Show();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
