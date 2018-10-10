@@ -91,5 +91,3 @@ E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\ShapesWPF.csproj.Ge
 E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\ShapesWPF.csproj.CoreCompileInputs.cache
 E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\ShapesWPF.exe
 E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\ShapesWPF.pdb
-E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\NewCanvas.g.cs
-E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\NewCanvas.baml
