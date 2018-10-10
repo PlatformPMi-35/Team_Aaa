@@ -48,9 +48,7 @@ namespace ShapesWPF
                 Fill = Brushes.Yellow,
                 Points = cl
             };
-            
-            ColorDialog b = new ColorDialog(c,a,int.Parse(textBox.Text), int.Parse(textBox1.Text));
-            b.Show();
+           
             this.Close();
         }
     }

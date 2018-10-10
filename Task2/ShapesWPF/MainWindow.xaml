@@ -11,27 +11,35 @@
         <Canvas Height="20" >
             <Menu x:Name="Menu_Shape" Width="54" Height="18" Canvas.Left="81">
                 <MenuItem x:Name="Menu_it" Header="_Shapes" Width="54" Height="18">
-                    
+
                 </MenuItem>
             </Menu>
             <Menu Margin="0,0,755,0">
-                <MenuItem Header="_File" Width="30" Height="18">
+                <MenuItem Header="_File" Width="30" Height="18" Click="MenuItem_Click_1">
                     <MenuItem Header="_New" Click="MenuItem_Click"/>
                     <MenuItem Header="_Open" Click="MenuItem_Click"/>
                     <MenuItem Header="_Save" Click="MenuItem_Click_1"/>
                 </MenuItem>
             </Menu>
-            <Button x:Name="button" Content="Button" Width="76" Click="button_Click" Canvas.Left="358" Canvas.Top="-2"/>
-            <Button x:Name="New_form" Content="New form" Canvas.Left="262" Canvas.Top="-2" Width="75" Click="New_form_Click"/>
             <Menu Width="41" Height="18" Canvas.Left="35" >
                 <MenuItem Header="_Save" Width="41" Height="18"/>
             </Menu>
         </Canvas>
-        <Canvas
+        <Canvas x:Name="DrawCanvs" Height="400" Width="792" MouseLeftButtonDown="DrawCanvas_MouseLeftButtonDown" Opacity="10" Background="White" Margin="1,0,0.6,0" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.026"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="3.582"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <!--<Canvas
             Height="400"
             x:Name="bCanvas" HorizontalAlignment="Right"
             Width="792">
-            <Canvas x:Name="DrawCanvas" Height="142" Canvas.Left="76" Canvas.Top="96" Width="342" MouseDown="DrawCanvas_MouseDown"/>
-        </Canvas>
+
+        </Canvas>-->
     </StackPanel>
 </Window>

@@ -19,21 +19,11 @@ namespace ShapesWPF
     /// </summary>
     public partial class ColorDialog : Window
     {
-        Canvas c;
-        Polygon p;
-        int x, y;
-        Brush cc;
-        public ColorDialog()
+        Polygon testPolygon = new Polygon();
+        public ColorDialog(Polygon pol)
         {
             InitializeComponent();
-        }
-        public ColorDialog(Canvas c, Polygon a, int xx, int yy)
-        {
-            p = a;
-            InitializeComponent();
-            this.c = c;
-            x = xx; y = yy;
-            //this.Close();
+            testPolygon = pol;
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -41,18 +31,14 @@ namespace ShapesWPF
             int q = comboBox.SelectedIndex;
             switch (q)
             {
-                case 0:cc = Brushes.Purple; break;
-                case 1: cc = Brushes.Black; break;
-                case 2: cc = Brushes.Red; break;
-                case 3: cc = Brushes.Green; break;
-                case 4: cc = Brushes.Pink; break;
+                case 0: testPolygon.Fill = Brushes.Purple; break;
+                case 1: testPolygon.Fill = Brushes.Black; break;
+                case 2: testPolygon.Fill = Brushes.Red; break;
+                case 3: testPolygon.Fill = Brushes.Green; break;
+                case 4: testPolygon.Fill = Brushes.Pink; break;
                 default:
                     break;
             }
-            p.Fill = cc;
-            c.Children.Add(p);
-            Canvas.SetLeft(p, x);
-            Canvas.SetTop(p, y);
             this.Close();
         }
 

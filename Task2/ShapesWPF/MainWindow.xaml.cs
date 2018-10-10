@@ -22,88 +22,20 @@ namespace ShapesWPF
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
-        Polygon newPolygon;
+    { 
         PointCollection pointCollection;
         public MainWindow()
         {
             InitializeComponent();
 
-            DrawCanvas.MouseDown += OnImageCliced;
         }
         Polygon pol = new Polygon();
-        PointCollection polcol = new PointCollection();
-        int i = 0;
-        void OnImageCliced(object sender, MouseEventArgs args)
-        {
-            
-            Point p = args.GetPosition(this);
-            polcol.Add(p);
-            i++;
-            if (i == 5)
-            {
-                DrawCanvas.Children.Add(pol);
-                Canvas.SetLeft(pol, 20);
-                Canvas.SetTop(pol, 10);
-                pol.Fill = Brushes.Green;
-                i = 0;
-            }
-            // у вас есть координаты клика относительно формы
-        }
-        // System.Drawing.Pic
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            
-            pointCollection = new PointCollection();
-            pointCollection.Add(new Point(15, 200));
-            pointCollection.Add(new Point(68, 70));
-            pointCollection.Add(new Point(110, 200));
-            pointCollection.Add(new Point(0, 125));
-            pointCollection.Add(new Point(155, 150));
-            newPolygon = new Polygon
-            {
-                Name = "",
-                Stroke = Brushes.Black,
-                StrokeThickness = 1,
-                Fill = Brushes.Yellow,
-                Points = pointCollection
-            };
-            bCanvas.Children.Add(newPolygon);
-            Canvas.SetLeft(newPolygon, 200);
-            Canvas.SetTop(newPolygon, 100);
-            MenuItem men = new MenuItem();
-            men.Header = "_Pentagram";
-            this.Menu_it.Items.Add(men);
-        }
-        
-        int count = 0;
 
-        private void New_form_Click(object sender, RoutedEventArgs e)
-        {
-            Dialog a = new Dialog(bCanvas);
-            a.Owner = this;
-            a.Show();
-            
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            count++;
-            if (count > 2)
-            {
-                count = 0;
-                Dialog a = new Dialog(bCanvas);
-                a.Owner = this;
-                a.Show();
-            }
-        }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            //NewCanvas ab = new NewCanvas(newCanvas);
-            bCanvas.Children.Clear();
-            //ab.Owner = this;
-            //ab.Show();
+            DrawCanvs.Children.Clear();
+            Menu_it.Items.Clear();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
@@ -123,25 +55,47 @@ namespace ShapesWPF
             }
         }
 
-        private void DrawCanvas_MouseDown(object sender, MouseButtonEventArgs e)
+        public void MainMenuAdd(string NameOfFigure)
         {
-            
-            Point p = e.GetPosition(this);
-            polcol.Add(p);
-            i++;
-            if (i == 5)
-            {
-                pol = new Polygon
-                { };
-                    
-                                                                                        
+            MenuItem menuShape = new MenuItem();
+            menuShape.Header = NameOfFigure;
+            this.Menu_it.Items.Add(menuShape);
+        }
 
-                DrawCanvas.Children.Add(pol);
-                Canvas.SetLeft(pol, 20);
-                Canvas.SetTop(pol, 10);
-                pol.Fill = Brushes.Green;
+        int i = 0,z=0;
+        PointCollection[] polcol = new PointCollection[1000];
+        private void DrawCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            polcol[z] = new PointCollection();
+            //pointCollection = new PointCollection();
+            //pointCollection.Add(new Point(15, 100));
+            //pointCollection.Add(new Point(68, 70));
+            //pointCollection.Add(new Point(110, 200));
+            //pointCollection.Add(new Point(0, 125));
+            //pointCollection.Add(new Point(155, 150));
+            Point pp = new Point();
+            pp = Mouse.GetPosition(this);
+            
+            polcol[z].Add(pp);
+            ++i; ++z;
+            if (i > 4)
+            {
+                Polygon newP = new Polygon
+                {
+                    Name = "",
+                    Stroke = Brushes.Black,
+                    StrokeThickness = 1,
+                    Fill = Brushes.Yellow,
+                    Points = polcol[z]
+                };
+                ColorDialog a = new ColorDialog(newP);
+                a.Owner = this;
+                a.Show();
+                DrawCanvs.Children.Add(newP);
+                MainMenuAdd("_Pentagram");
                 i = 0;
             }
         }
+
     }
 }
