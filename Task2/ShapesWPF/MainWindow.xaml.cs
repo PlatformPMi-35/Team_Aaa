@@ -61,12 +61,10 @@ namespace ShapesWPF
             menuShape.Header = NameOfFigure;
             this.Menu_it.Items.Add(menuShape);
         }
-
-        int i = 0,z=0;
-        PointCollection[] polcol = new PointCollection[1000];
+        PointCollection polcol= new PointCollection();
+        int i = 0;
         private void DrawCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            polcol[z] = new PointCollection();
             //pointCollection = new PointCollection();
             //pointCollection.Add(new Point(15, 100));
             //pointCollection.Add(new Point(68, 70));
@@ -76,8 +74,8 @@ namespace ShapesWPF
             Point pp = new Point();
             pp = Mouse.GetPosition(this);
             
-            polcol[z].Add(pp);
-            ++i; ++z;
+            polcol.Add(pp);
+            ++i;
             if (i > 4)
             {
                 Polygon newP = new Polygon
@@ -86,13 +84,14 @@ namespace ShapesWPF
                     Stroke = Brushes.Black,
                     StrokeThickness = 1,
                     Fill = Brushes.Yellow,
-                    Points = polcol[z]
+                    Points = polcol
                 };
                 ColorDialog a = new ColorDialog(newP);
                 a.Owner = this;
                 a.Show();
                 DrawCanvs.Children.Add(newP);
                 MainMenuAdd("_Pentagram");
+                polcol = new PointCollection();
                 i = 0;
             }
         }
