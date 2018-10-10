@@ -22,7 +22,8 @@ namespace ShapesWPF
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    { 
+    {
+        int z = 1;
         PointCollection pointCollection;
         public MainWindow()
         {
@@ -36,6 +37,7 @@ namespace ShapesWPF
         {
             DrawCanvs.Children.Clear();
             Menu_it.Items.Clear();
+            z=1;
         }
 
         public void ExportToPng(Canvas surface)
@@ -80,7 +82,7 @@ namespace ShapesWPF
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            ExportToPng(DrawCanvs);
+            
         }
 
         public void MainMenuAdd(string NameOfFigure)
@@ -90,7 +92,7 @@ namespace ShapesWPF
             this.Menu_it.Items.Add(menuShape);
         }
         PointCollection polcol= new PointCollection();
-        int i = 0; int z = 1;
+        int i = 0; 
         private void DrawCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             //pointCollection = new PointCollection();
@@ -142,5 +144,20 @@ namespace ShapesWPF
             }
         }
 
+        private void Open_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            openFileDialog.Filter = "Image documents (.jpeg)|*.jpeg";
+            openFileDialog.ShowDialog();
+            string fileName = openFileDialog.FileName;
+            ImageBrush brush = new ImageBrush();
+            brush.ImageSource = new BitmapImage(new Uri(fileName, UriKind.Relative));
+            DrawCanvs.Background = brush;
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            ExportToPng(DrawCanvs);
+        }
     }
 }
