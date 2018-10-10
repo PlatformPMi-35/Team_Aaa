@@ -71,6 +71,9 @@ namespace ShapesWPF
             bCanvas.Children.Add(newPolygon);
             Canvas.SetLeft(newPolygon, 200);
             Canvas.SetTop(newPolygon, 100);
+            MenuItem men = new MenuItem();
+            men.Header = "_Pentagram";
+            this.Menu_it.Items.Add(men);
         }
         
         int count = 0;
