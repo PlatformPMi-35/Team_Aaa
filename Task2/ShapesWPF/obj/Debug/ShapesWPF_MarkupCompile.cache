@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\git\Team_Aaa\Task2\ShapesWPF\obj\Debug\
+E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\obj\Debug\
 ShapesWPF
 none
 false
 DEBUG;TRACE
-D:\git\Team_Aaa\Task2\ShapesWPF\App.xaml
-3-1749508086
+E:\DAEMON Tools Lite\Lang\Team_Aaa\Task2\ShapesWPF\App.xaml
+4-278343014
 
-7-793990218
+8161603565
 131569487696
-ColorDialog.xaml;Dialog.xaml;MainWindow.xaml;
+ColorDialog.xaml;Dialog.xaml;MainWindow.xaml;NewCanvas.xaml;
 
-True
+False
 

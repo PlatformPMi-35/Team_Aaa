@@ -98,7 +98,9 @@ namespace ShapesWPF
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            NewCanvas ab = new NewCanvas(newCanvas);
+            ab.Owner = this;
+            ab.Show();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
