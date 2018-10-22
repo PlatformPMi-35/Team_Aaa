@@ -19,8 +19,9 @@ namespace ShapesWPF
     /// </summary>
     public partial class ColorDialog : Window
     {
-        Polygon testPolygon = new Polygon();
-        public ColorDialog(Polygon pol)
+        MyPolygon testPolygon = new MyPolygon();
+        Polygon A = new Polygon();
+        public ColorDialog(MyPolygon pol)
         {
             InitializeComponent();
             testPolygon = pol;
@@ -31,11 +32,11 @@ namespace ShapesWPF
             int q = comboBox.SelectedIndex;
             switch (q)
             {
-                case 0: testPolygon.Fill = Brushes.Purple; break;
-                case 1: testPolygon.Fill = Brushes.Black; break;
-                case 2: testPolygon.Fill = Brushes.Red; break;
-                case 3: testPolygon.Fill = Brushes.Green; break;
-                case 4: testPolygon.Fill = Brushes.Pink; break;
+                case 0: testPolygon.Fill = MyPolygon.FromBrush(Brushes.Purple); break; 
+                case 1: testPolygon.Fill = MyPolygon.FromBrush(Brushes.Black); break;
+                case 2: testPolygon.Fill = MyPolygon.FromBrush(Brushes.Red); break;
+                case 3: testPolygon.Fill = MyPolygon.FromBrush(Brushes.Green); break;
+                case 4: testPolygon.Fill = MyPolygon.FromBrush(Brushes.Pink); break;
                 default:
                     break;
             }
