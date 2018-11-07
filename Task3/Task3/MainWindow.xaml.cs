@@ -24,9 +24,9 @@ namespace Task3
         public MainWindow()
         {
             InitializeComponent();
-             Sushiarr.Read(@"C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Text files\sushi_list.txt");
-           // Sushiarr.Read(@"\..\Text files\sushi_list.txt");
-            using (StreamReader reader = new StreamReader(@"C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Text files\NumberOfOrders.txt"))
+             //Sushiarr.Read(@"C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Text files\sushi_list.txt");
+            Sushiarr.Read(@"..\..\Text files\sushi_list.txt");
+            using (StreamReader reader = new StreamReader(@"..\..\Text files\NumberOfOrders.txt"))
             {
                 numberoforders = Convert.ToInt32(reader.ReadToEnd());
             }
@@ -63,11 +63,7 @@ namespace Task3
         public void Executr_Order(object sender, RoutedEventArgs e)
         {
             Classes.CollectionOfShushi tmpsushi = new Classes.CollectionOfShushi();
-            //for(int i=0;i<buylist.Items.Count;i++)
-            //{
-            //    tmpsushi.Add((Classes.Sushi)buylist.Items[i]);
-            //}
-            using (StreamWriter writer = new StreamWriter($@"C:\Users\gembi\source\repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Orders\Order_{numberoforders}.txt"))
+            using (StreamWriter writer = new StreamWriter($@"..\..\Orders\Order_{numberoforders}.txt"))
             {
                 DateTime dataTime = DateTime.Now;
                 writer.WriteLine($"Order #{numberoforders} {dataTime.ToString()}");
@@ -75,11 +71,10 @@ namespace Task3
                 {
                     writer.WriteLine(((Classes.Sushi)buylist.Items[i]).ToWrite());
                 }
-                //tmpsushi.Write($@"C:\Users\gembi\source\repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Orders\Order_{numberoforders}.txt");
                 writer.WriteLine($"Sum={Sum1.Content} uah");
             }
             numberoforders++;
-            using (StreamWriter reader = new StreamWriter(@"C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Classes\NumberOfOrders.txt"))
+            using (StreamWriter reader = new StreamWriter(@"..\..\Text files\NumberOfOrders.txt"))
             {
                 reader.WriteLine(numberoforders);
             }
