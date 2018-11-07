@@ -7,9 +7,9 @@ using System.IO;
 
 namespace Task3.Classes
 {
-    class CollectionOfShushi:Sushi,IFileManager
+    public class CollectionOfShushi:Sushi,IFileManager
     {
-        List<Sushi> list;
+        public List<Sushi> list;
 
         public CollectionOfShushi()
         {
@@ -36,7 +36,7 @@ namespace Task3.Classes
                 throw new ArgumentNullException(nameof(filePath));
             }
 
-            using (var writer = new StreamWriter(filePath))
+            using (StreamWriter writer = File.AppendText(filePath))
             {
                 foreach (var i in list)
                 {

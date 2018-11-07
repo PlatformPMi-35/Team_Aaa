@@ -1,0 +1,15 @@
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe.config
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\bin\Debug\Task3.pdb
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.csprojAssemblyReference.cache
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.g.cs
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\App.g.cs
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.cache
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.lref
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.baml
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.g.resources
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.Properties.Resources.resources
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.GenerateResource.cache
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.exe
+C:\Users\gembi\Source\Repos\PlatformPMi-35\Team_Aaa\Task3\Task3\obj\Debug\Task3.pdb

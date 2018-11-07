@@ -1,0 +1,4 @@
+Order #0
+Asorti 399 1000 -
+Big_Cash 799 2000 -
+Sum=1198 uah

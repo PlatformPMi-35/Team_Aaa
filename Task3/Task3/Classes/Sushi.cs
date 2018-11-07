@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Task3.Classes
 {
-    class Sushi
+    public class Sushi
     {
 
-        internal string name { get; set; }
+        public string name { get; set; }
 
-        double price { get; set; }
+        public double price { get; set; }
 
-        double weight { get; set; }
+        public double weight { get; set; }
 
-        string ingredients { get; set; }
+        public string ingredients { get; set; }
 
         public Sushi()
         {
@@ -48,13 +48,20 @@ namespace Task3.Classes
 
         public override string ToString()
         {
-            return name + " " + price + "$ " + weight + "g " + ingredients;
+            return name + " " + price + " uah " + weight + " g " + ingredients;
         }
 
         public string ToWrite()
         {
-            return name + " " + price + " " + weight + " " + ingredients;
+            return name + " " + price + " uah " + weight + " g " + ingredients;
         }
 
+        public string ForList
+        {
+            get
+            {
+                return $"{name} {price} uah";
+            }
+        }
     }
 }
