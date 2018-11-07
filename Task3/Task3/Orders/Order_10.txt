@@ -1,3 +1,4 @@
-Order #10 07.11.2018 3:01:12
+Order #10 07.11.2018 13:51:31
+Filadelfia 399 uah 1000 g -
 Asorti 399 uah 1000 g -
-Sum=399 uah
+Sum=798 uah

@@ -63,10 +63,10 @@ namespace Task3
         public void Executr_Order(object sender, RoutedEventArgs e)
         {
             Classes.CollectionOfShushi tmpsushi = new Classes.CollectionOfShushi();
-            for(int i=0;i<buylist.Items.Count;i++)
-            {
-                tmpsushi.Add((Classes.Sushi)buylist.Items[i]);
-            }
+            //for(int i=0;i<buylist.Items.Count;i++)
+            //{
+            //    tmpsushi.Add((Classes.Sushi)buylist.Items[i]);
+            //}
             using (StreamWriter writer = new StreamWriter($@"C:\Users\gembi\source\repos\PlatformPMi-35\Team_Aaa\Task3\Task3\Orders\Order_{numberoforders}.txt"))
             {
                 DateTime dataTime = DateTime.Now;
