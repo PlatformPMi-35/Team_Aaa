@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Task3.Classes
 {
-    public class CollectionOfShushi:Sushi,IFileManager
+    public class CollectionOfShushi:IFileManager
     {
         public List<Sushi> list;
 
