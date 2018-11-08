@@ -7,15 +7,28 @@ using System.IO;
 
 namespace Task3.Classes
 {
+    /// <summary>
+    /// Class that saves list of sushi and allow to work with this list
+    /// </summary>
     public class CollectionOfShushi:IFileManager
     {
+        /// <summary>
+        /// list that saves all sushi 
+        /// </summary>
         public List<Sushi> list;
-
+        /// <summary>
+        /// Constructor without parameters
+        /// </summary>
         public CollectionOfShushi()
         {
             list = new List<Sushi>();
         }
- 
+        /// <summary>
+        /// Method that allow to read from file list of sushi
+        /// </summary>
+        /// <param name="filePath">
+        /// string that discribes path to file to read from
+        /// </param>
         public void Read(string filePath)
         {
             StreamReader Reader = new StreamReader(filePath, System.Text.Encoding.Default);
@@ -28,7 +41,12 @@ namespace Task3.Classes
             }
             Reader.Close();
         }
-
+        /// <summary>
+        /// Method that allow to write to file list of sushi
+        /// </summary>
+        /// <param name="filePath">
+        /// string that discribes path to file to write to
+        /// </param>
         public void Write(string filePath)
         {
             if (filePath == null)
@@ -45,7 +63,12 @@ namespace Task3.Classes
                 }
             }
         }
-
+        /// <summary>
+        /// Method that allow to add to list new sushi
+        /// </summary>
+        /// <param name="toAdd">
+        /// Sushi that should be added to list
+        /// </param>
         public void Add(Sushi toAdd)
         {
             if(list.Find(x=>x.name==toAdd.name)!=null||!toAdd.isGood())
@@ -57,7 +80,12 @@ namespace Task3.Classes
                 list.Add(toAdd);
             }
         }
-
+        /// <summary>
+        /// Method allows to delete sushi from list by name
+        /// </summary>
+        /// <param name="nameToDelete">
+        /// name of sushi that should be deleted
+        /// </param>
         public void DeleteByName(string nameToDelete)
         {
             foreach(var i in list)
@@ -68,7 +96,12 @@ namespace Task3.Classes
                 }
             }
         }
-
+        /// <summary>
+        /// Method to get all list of sushi
+        /// </summary>
+        /// <returns>
+        /// returns list of suhsi
+        /// </returns>
         public List<Sushi> getList()
         {
             return list;
