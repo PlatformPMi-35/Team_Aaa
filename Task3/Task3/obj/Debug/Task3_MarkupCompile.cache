@@ -4,12 +4,20 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\ForTeam\Team_Aaa\Task3\Task3\obj\Debug\
+=======
+C:\Team-Aaa\Team_Aaa\Task3\Task3\obj\Debug\
+>>>>>>> b21b10a326ed08062fe7cb769eebab48249891f8
 Task3
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\ForTeam\Team_Aaa\Task3\Task3\App.xaml
+=======
+C:\Team-Aaa\Team_Aaa\Task3\Task3\App.xaml
+>>>>>>> b21b10a326ed08062fe7cb769eebab48249891f8
 11151548125
 
 131113023412
