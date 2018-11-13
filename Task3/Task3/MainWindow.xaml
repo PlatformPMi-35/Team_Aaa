@@ -16,7 +16,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="Images/bg_new.jpg"></ImageBrush>
         </Grid.Background>
-        <Image Margin="763,0,7,79" Source="list_ob.png" Stretch="Fill"/>
+        <Image Margin="763,0,7,79" Source="Images/list_ob.png" Stretch="Fill"/>
         <ListBox x:Name="buylist" HorizontalAlignment="Left" Height="299" Margin="794,33,0,0" VerticalAlignment="Top" Width="180" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFEC7505" FontFamily="Arial" FontSize="14" FontWeight="Bold">
             <ListBox.Effect>
                 <DropShadowEffect Direction="250"/>
@@ -45,14 +45,14 @@
                 <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
             </Label.Effect>
         </Label>
-        <Image Margin="806,337,0,-5" Source="MakeAnOrder.png" Stretch="Fill"/>
+        <Image Margin="806,337,0,-5" Source="Images/MakeAnOrder.png" Stretch="Fill"/>
         <Label x:Name="Sum1" Content="0" HorizontalAlignment="Left" Margin="905,308,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial" FontWeight="Bold" FontSize="14" Foreground="Red">
             <Label.Effect>
                 <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
             </Label.Effect>
         </Label>
-        <Button x:Name="Order" Content="Make an order" Click="Executr_Order" HorizontalAlignment="Left" Margin="818,349,0,0" VerticalAlignment="Top" Width="188" RenderTransformOrigin="0.702,0.5" Opacity="0" Height="83"/>
-        <Image Margin="828,-3,64,383" Source="YourList.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="Order" Content="Images/Make an order" Click="Executr_Order" HorizontalAlignment="Left" Margin="818,349,0,0" VerticalAlignment="Top" Width="188" RenderTransformOrigin="0.702,0.5" Opacity="0" Height="83"/>
+        <Image Margin="828,-3,64,383" Source="Images/YourList.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
