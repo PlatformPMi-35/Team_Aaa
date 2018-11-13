@@ -1,0 +1,15 @@
+Order #26 13.11.2018 5:45:29
+Filadelfia 399 uah 1000 g -
+Asorti 399 uah 1000 g -
+Big_Cash 799 uah 2000 g -
+Red_Dragon 99 uah 120 g -
+Sayak_uramaki 314 uah 480 g -
+California 320 uah 670 g -
+Filadelfia 399 uah 1000 g -
+Asorti 399 uah 1000 g -
+Sayak_uramaki 314 uah 480 g -
+Big_Cash 799 uah 2000 g -
+Asorti 399 uah 1000 g -
+Sayak_uramaki 314 uah 480 g -
+Red_Dragon 99 uah 120 g -
+Sum=5053 uah

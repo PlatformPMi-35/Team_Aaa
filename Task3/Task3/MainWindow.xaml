@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Task3"
         xmlns:local2="clr-namespace:Task3.Classes"
         mc:Ignorable="d"
-        Title="Sushi" Height="463.4" Width="1006.4">
+        Title="Sushi" Height="463.4" Width="1006.4" MaxWidth="1006.4" MaxHeight="463.4" MinWidth="1006.4" MinHeight="463.4" BorderThickness="0" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
     <Window.CommandBindings>
         <!--<CommandBinding Command="local2:CommandForButton.Del" Executed="Execute_Delete">-->
         <CommandBinding Command="local2:CommandForButton.ToList" Executed="Execute_ToList"/>
