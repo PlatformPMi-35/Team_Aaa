@@ -28,3 +28,18 @@ C:\Team-Aaa\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.GenerateResource.cache
 C:\Team-Aaa\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
 C:\Team-Aaa\Team_Aaa\Task3\Task3\obj\Debug\Task3.exe
 C:\Team-Aaa\Team_Aaa\Task3\Task3\obj\Debug\Task3.pdb
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe.config
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\bin\Debug\Task3.pdb
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.csprojAssemblyReference.cache
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.g.cs
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\App.g.cs
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.cache
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.lref
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.baml
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.g.resources
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.Properties.Resources.resources
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.GenerateResource.cache
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.exe
+E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.pdb

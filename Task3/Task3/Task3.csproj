@@ -120,7 +120,34 @@
     <Folder Include="Orders\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\bg.jpg" />
+    <Resource Include="Images\bg_new.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\filadelfia_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\asorti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\big cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\california.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\red dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sayak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="YourList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="list_ob.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
