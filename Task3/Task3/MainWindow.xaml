@@ -12,12 +12,12 @@
         <CommandBinding Command="local2:CommandForButton.ToList" Executed="Execute_ToList"/>
 
     </Window.CommandBindings>
-    <Grid Name="General_grid" Margin="0,0,2,0">
+    <Grid Name="General_grid" Margin="0,0,-8,0">
         <Grid.Background>
             <ImageBrush ImageSource="Images/bg_new.jpg"></ImageBrush>
         </Grid.Background>
         <Image Margin="763,0,7,79" Source="list_ob.png" Stretch="Fill"/>
-        <ListBox x:Name="buylist" HorizontalAlignment="Left" Height="299" Margin="788,33,0,0" VerticalAlignment="Top" Width="180" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFEC7505" FontFamily="Arial" FontSize="14" FontWeight="Bold">
+        <ListBox x:Name="buylist" HorizontalAlignment="Left" Height="299" Margin="794,33,0,0" VerticalAlignment="Top" Width="180" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFEC7505" FontFamily="Arial" FontSize="14" FontWeight="Bold">
             <ListBox.Effect>
                 <DropShadowEffect Direction="250"/>
             </ListBox.Effect>
@@ -40,9 +40,18 @@
         <Button x:Name="butt4" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
         <Button x:Name="butt5" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="277,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
         <Button x:Name="butt6" Command="local2:CommandForButton.ToList" Content="Buy 1 set" HorizontalAlignment="Left" Margin="545,215,0,0" VerticalAlignment="Top" Width="220" Opacity="0" Height="117"/>
-        <Label Content="Sum in uah= " HorizontalAlignment="Left" Margin="788,358,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="Sum1" Content="0" HorizontalAlignment="Left" Margin="934,358,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Order" Content="Make an order" Click="Executr_Order" HorizontalAlignment="Left" Margin="518,376,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.702,0.5"/>
+        <Label Content="Sum in UAH: " HorizontalAlignment="Left" Margin="816,308,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" FontSize="14" Background="{x:Null}" Foreground="Red">
+            <Label.Effect>
+                <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <Image Margin="806,337,0,-5" Source="MakeAnOrder.png" Stretch="Fill"/>
+        <Label x:Name="Sum1" Content="0" HorizontalAlignment="Left" Margin="905,308,0,0" VerticalAlignment="Top" Background="{x:Null}" FontFamily="Arial" FontWeight="Bold" FontSize="14" Foreground="Red">
+            <Label.Effect>
+                <DropShadowEffect Color="Red" Direction="0" ShadowDepth="0" BlurRadius="3"/>
+            </Label.Effect>
+        </Label>
+        <Button x:Name="Order" Content="Make an order" Click="Executr_Order" HorizontalAlignment="Left" Margin="818,349,0,0" VerticalAlignment="Top" Width="188" RenderTransformOrigin="0.702,0.5" Opacity="0" Height="83"/>
         <Image Margin="828,-3,64,383" Source="YourList.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -53,6 +62,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+
 
 
     </Grid>

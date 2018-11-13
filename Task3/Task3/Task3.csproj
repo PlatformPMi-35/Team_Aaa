@@ -99,18 +99,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\uyamaki.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\asorti.JPG" />
-    <Resource Include="Images\bigcash.jpg" />
-    <Resource Include="Images\california.JPG" />
-    <Resource Include="Images\filadelfia.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\red_dragon.JPG" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Text files\sushi_list.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="list_ob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MakeAnOrder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
