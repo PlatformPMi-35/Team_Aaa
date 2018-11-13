@@ -1,69 +1,58 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Test
+﻿namespace Test
 {
+    using System;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using System.Collections.Generic;
+    using Task3;
+    using Task3.Classes;
     /// <summary>
-    /// Summary description for Test2
+    /// Collection of Sushi class test
     /// </summary>
     [TestClass]
-    public class Test2
+    public class Test1
     {
-        public Test2()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-
-        private TestContext testContextInstance;
-
-        /// <summary>
-        ///Gets or sets the test context which provides
-        ///information about and functionality for the current test run.
-        ///</summary>
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
-
-        #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
-        #endregion
+        CollectionOfShushi collection = new CollectionOfShushi();
 
         [TestMethod]
-        public void TestMethod1()
+        public void ReadTest()
         {
-            //
-            // TODO: Add test logic here
-            //
+            collection.Read(@"C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\data.txt");
+            Sushi a = new Sushi("sushi", 1, 1,"1");
+            Assert.AreEqual(collection.list[0].ToString(), a.ToString());
+            a = new Sushi("AnotherSushi", 2, 2, "2");
+            Assert.AreEqual(collection.list[1].ToString(), a.ToString());
+        }
+
+        [TestMethod]
+        public void AddTest()
+        {
+            CollectionOfShushi c = new CollectionOfShushi();
+            Sushi a = new Sushi("hz", 1, 1, "1");
+            c.Add(a);
+            Assert.AreEqual(c.list.Count, 1);
+        }
+
+        [TestMethod]
+        public void DeleteTest()
+        {
+            collection.list.Clear();
+            collection.Read(@"C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\data.txt");
+            collection.DeleteByName("sushi");
+            Assert.AreEqual(collection.list[0].ToString(), new Sushi("AnotherSushi", 2, 2, "2").ToString());
+        }
+
+        [TestMethod]
+        public void GetListTest()
+        {
+            List<Sushi> l = new List<Sushi>();
+            collection.list.Clear();
+            collection.Read(@"C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\data.txt");
+            Sushi a = new Sushi("sushi", 1, 1, "1");
+            l.Add(a);
+            Sushi b = new Sushi("AnotherSushi", 2, 2, "2");
+            l.Add(b);
+            Assert.AreEqual(l[0].ToString(), new Sushi("sushi",1,1,"1").ToString());
+            Assert.AreEqual(l[1].ToString(), new Sushi("AnotherSushi", 2, 2, "2").ToString());
         }
     }
 }

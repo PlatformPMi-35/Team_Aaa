@@ -8,7 +8,7 @@
     /// Sushi class test
     /// </summary>
     [TestClass]
-    public class Test1
+    public class Test2
     {
         Sushi a = new Sushi("New sushi", 322, 102, "Fish");
         Sushi b = new Sushi();
