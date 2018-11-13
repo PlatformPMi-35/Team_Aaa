@@ -43,3 +43,18 @@ E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.Generat
 E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
 E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.exe
 E:\Новая папка (3)\Team_Aaa\Task3\Task3\obj\Debug\Task3.pdb
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe.config
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\bin\Debug\Task3.exe
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\bin\Debug\Task3.pdb
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.csprojAssemblyReference.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.g.cs
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\App.g.cs
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3_MarkupCompile.lref
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\MainWindow.baml
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.g.resources
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.Properties.Resources.resources
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.GenerateResource.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.exe
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Task3\obj\Debug\Task3.pdb

@@ -1,0 +1,17 @@
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Test.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Test.pdb
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Task3.exe
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Task3.pdb
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Task3.exe.config
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\obj\Debug\Test.dll
+C:\Users\Home\Desktop\C#\WPF\Team_Aaa\Task3\Test\obj\Debug\Test.pdb

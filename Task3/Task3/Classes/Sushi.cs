@@ -65,7 +65,7 @@ namespace Task3.Classes
         /// <returns>
         /// true if is good and false if not
         /// </returns>
-        protected internal bool isGood()
+        public bool isGood()
         {
             if(this.name!=string.Empty&&this.price!=double.NaN&&this.weight!=double.NaN&&this.ingredients!=string.Empty)
             {
