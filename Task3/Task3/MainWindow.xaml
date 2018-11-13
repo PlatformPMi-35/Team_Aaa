@@ -12,10 +12,7 @@
         <CommandBinding Command="local2:CommandForButton.ToList" Executed="Execute_ToList"/>
 
     </Window.CommandBindings>
-    <Grid Name="General_grid">
-        <Grid.Background>
-            <ImageBrush ImageSource="Images/1480262568_SakurasounoPetnaKanojo_scr1.jpg"></ImageBrush>
-        </Grid.Background>
+    <Grid Name="General_grid" Background="Black">
         <ListBox x:Name="buylist" HorizontalAlignment="Left" Height="181" Margin="808,28,0,0" VerticalAlignment="Top" Width="130">
             <ListBox.ContextMenu>
                 <ContextMenu>
